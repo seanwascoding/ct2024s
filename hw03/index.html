@@ -196,7 +196,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      將輸出的PDF切分為單獨的字並解決字體上被塗黑的問題是一項具有挑戰性但同時也是相當有趣的技術任務。透過這樣的處理，我們能夠從PDF文件中提取出每個字元，並將其保存為單獨的圖像或文本檔案。這樣的處理過程需要複雜的圖像處理和文本識別技術，以確保準確性和效率。同時，解決字體上被塗黑的問題需要使用一系列的技術手段，例如圖像增強、二值化、邊緣檢測等。這項技術的成功應用將為文字識別、數據分析和文件處理等領域帶來許多潛在的應用價值。
     </div>
   </div>
 
@@ -321,6 +321,14 @@
 
     if (d3.select("#myCheckbox3").property("checked")){
       score += parseInt(d3.select('#m3').html());   
+    }
+
+    if (d3.select("#myCheckbox4").property("checked")){
+      score += parseInt(d3.select('#m4').html());   
+    }
+
+    if (d3.select("#myCheckbox5").property("checked")){
+      score += parseInt(d3.select('#m4').html());   
     }
 
     d3.select("#myTotal").html(score);    
